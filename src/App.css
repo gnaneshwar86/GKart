@@ -3,8 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  background: rgb(58,180,174);
-  background: linear-gradient(31deg, rgba(58,180,174,1) 0%, rgba(2,0,117,1) 52%, rgba(252,69,69,1) 100%);
+  background: whitesmoke;
 }
 .box{
   display: flex;
@@ -27,4 +26,56 @@
 }
 .logo{
   margin-right: 150px;
+}
+.container{
+  display: flex;
+}
+.main-con{
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+}
+.dashboard{
+  display: flex;
+  align-items: center;
+  background: black;
+  height: 10vh;
+  width: 100%;
+  box-shadow: 0 12px 10px rgba(0, 0, 0, 0.1);
+}
+.menu{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 15%;
+  height: 100vh;
+  background: whitesmoke;
+  border-right: 1px solid;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+.menu ul{
+  list-style-type: none;
+  padding: 10px;
+  align-items: center ;
+  justify-content: center;
+  width: 100%;
+}
+.menu li{
+  padding: 10px;
+  text-align: left;        /* Align text to the left */
+  cursor: pointer;         /* Change cursor to pointer on hover */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+.menu ul li:hover {
+  background-color: black; /* Change background on hover */
+  color: white;         /* Change text color on hover */
+}
+.logohome{
+  height: 10vh;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+}
+.con{
+  padding: 20px;
 }

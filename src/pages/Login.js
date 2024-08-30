@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import {Box,TextField,Button, ButtonGroup} from '@mui/material'
 import '../App.css'
-import logo from '../assets/GKdp.png'
+import logo from '../assets/gkartlogo.png'
 function Login() {
   let [email,setEmail] = useState('');
   let [password,setPassword] = useState('');
