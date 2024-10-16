@@ -1,54 +1,42 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { Stack, Box, Typography } from '@mui/material';
 import fruits from '../assets/fruits.jpg'
 import vegetables from '../assets/vegetables.jpg'
 import dairyeggs from '../assets/dairyeggs.jpg'
-import meat from '../assets/meat.jpg'
+import meat from '../assets/meat.jpeg'
 import bread from '../assets/bread.jpg'
 import snacks from '../assets/snacks.jpg'
 import beverages from '../assets/beverages.jpeg'
+import sweets from '../assets/sweets.jpg'
+import provision from '../assets/provision.jpeg'
 function Categories() {
+  const [catego,setCatego] = useState([
+    {id:1, name:'Fruits', add:fruits},
+    {id:2, name:'Vegetables',add:vegetables},
+    {id:3, name:'Dairy & Eggs',add:dairyeggs},
+    {id:4, name:'Meat & Seafood',add:meat},
+    {id:5, name:'Bakery & Bread',add:bread},
+    {id:6, name:'Snacks',add:snacks},
+    {id:8, name:'Sweets',add:sweets},
+    {id:7, name:'Beverages',add:beverages},
+    {id:8, name:'Provisions',add:provision},
+  ])
   return (
     <Stack
       direction="row"  
       justifyContent="space-between"
       sx={{ padding: '20px', backgroundColor: 'whitesmoke', borderRadius: '8px' }}
     >
-      
-      <Box sx={{ textAlign: 'center' }}>
-        <img src={fruits} alt="Fruits" style={{ borderRadius: '50%' ,height:"10vh"}} />
-        <Typography variant="caption" display="block">Fruits</Typography>
+      {catego.map(cat=>(
+        <Box  className="categ" key={cat.id} sx={{ textAlign: 'center' }}>
+          <img src={cat.add} alt="Fruits" style={{ borderRadius: '50%' ,height:"10vh"}} />
+          <Typography variant="caption" display="block" sx={{
+            '&:hover':{
+              fontWeight:'bold',
+            }
+          }}>{cat.name}</Typography>
       </Box>
-
-      <Box sx={{ textAlign: 'center' }}>
-        <img src={vegetables} alt="Vegetables" style={{ borderRadius: '50%',height:"10vh" }} />
-        <Typography variant="caption" display="block">Vegetables</Typography>
-      </Box>
-      
-      <Box sx={{ textAlign: 'center' }}>
-        <img src={dairyeggs} alt="Dairy & Eggs" style={{ borderRadius: '50%',height:"10vh" }} />
-        <Typography variant="caption" display="block">Dairy & Eggs</Typography>
-      </Box>
-
-      <Box sx={{ textAlign: 'center' }}>
-        <img src={meat} alt="Meat & Seafood" style={{ borderRadius: '50%',height:"10vh" }} />
-        <Typography variant="caption" display="block">Meat & Seafood</Typography>
-      </Box>
-
-      <Box sx={{ textAlign: 'center' }}>
-        <img src={bread} alt="Bakery & Bread" style={{ borderRadius: '50%',height:"10vh" }} />
-        <Typography variant="caption" display="block">Bakery & Bread</Typography>
-      </Box>
-
-      <Box sx={{ textAlign: 'center' }}>
-        <img src={snacks} alt="Snacks" style={{ borderRadius: '50%',height:"10vh" }} />
-        <Typography variant="caption" display="block">Snacks</Typography>
-      </Box>
-
-      <Box sx={{ textAlign: 'center' }}>
-        <img src={beverages} alt="Beverages" style={{ borderRadius: '50%',height:"10vh" }} />
-        <Typography variant="caption" display="block">Beverages</Typography>
-      </Box>
+      ))}
 
     </Stack>
   );

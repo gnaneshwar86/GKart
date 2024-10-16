@@ -36,7 +36,11 @@
   width: 85%;
 }
 .dashboard{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   background: black;
   height: 10vh;
@@ -44,6 +48,8 @@
   box-shadow: 0 12px 10px rgba(0, 0, 0, 0.1);
 }
 .menu{
+  position: sticky;
+  top : 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -62,13 +68,13 @@
 }
 .menu li{
   padding: 10px;
-  text-align: left;        /* Align text to the left */
-  cursor: pointer;         /* Change cursor to pointer on hover */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 .menu ul li:hover {
-  background-color: black; /* Change background on hover */
-  color: white;         /* Change text color on hover */
+  background-color: black;
+  color: white;
 }
 .logohome{
   height: 10vh;
@@ -78,4 +84,38 @@
 }
 .con{
   padding: 20px;
+}
+.categ img{
+  cursor: pointer;
+}
+.categ img:hover{
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+.categ:hover .MuiTypography-root {
+  font-weight: bold;
+  cursor: pointer;
+  transition: font-weight 0.3s ease;
+}
+.ite:hover{
+  cursor: pointer;
+}
+.ite:hover{
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+.item img:hover{
+  cursor: pointer;
+}
+.item img:hover{
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+.prof:hover{
+  transform: scale(1.06);
+  transition: transform 0.3s ease;
+  box-shadow: 0 5px 10px rgba(95, 95, 95, 0.3);
 }
