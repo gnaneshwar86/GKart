@@ -1,25 +1,114 @@
 {
-    "fruits": [
-        { "id": 1, "name": "Dragon Fruit", "add": "/assets/dragon.webp", "price": 280.00, "count": 0 },
-        { "id": 2, "name": "Guava", "add": "/assets/guava.webp", "price": 180.00, "count": 0 },
-        { "id": 3, "name": "Strawberry", "add": "/assets/strawberry.webp", "price": 160.00, "count": 0 },
-        { "id": 4, "name": "Kiwi", "add": "/assets/kiwi.webp", "price": 480.00, "count": 0 },
-        { "id": 5, "name": "Apple", "add": "/assets/apple.webp", "price": 220.00, "count": 0 }
-    ],
-    "vegetables": [
-        { "id": 1, "name": "Carrot", "add": "/assets/carrot.webp", "price": 80.00, "count": 0 },
-        { "id": 2, "name": "Brinjal", "add": "/assets/brinjal.webp", "price": 60.00, "count": 0 },
-        { "id": 3, "name": "Onion", "add": "/assets/onion.webp", "price": 55.00, "count": 0 },
-        { "id": 4, "name": "Tomato", "add": "/assets/tomato.webp", "price": 30.00, "count": 0 }
-    ],
-    "dairy": [
-        { "id": 1, "name": "Eggs - 10", "add": "/assets/eggs.webp", "price": 65.00, "count": 0 },
-        { "id": 2, "name": "Toned Milk - 500 ml", "add": "/assets/milktoned.webp", "price": 30.00, "count": 0 },
-        { "id": 3, "name": "Full Cream Milk - 500 ml", "add": "/assets/milkcream.webp", "price": 32.00, "count": 0 },
-        { "id": 4, "name": "Curd - 400g Cup", "add": "/assets/curd.webp", "price": 50.00, "count": 0 },
-        { "id": 5, "name": "Pure Cow Ghee - 500 ml", "add": "/assets/ghee.webp", "price": 390.00, "count": 0 }
-    ],
-    "cart":[
-        
-    ]
+  "Fruits": [
+    {
+      "id": "11",
+      "name": "Dragon Fruit",
+      "add": "/assets/dragon.webp",
+      "price": 280,
+      "count": 1
+    },
+    {
+      "id": "12",
+      "name": "Guava",
+      "add": "/assets/guava.webp",
+      "price": 180,
+      "count": 0
+    },
+    {
+      "id": "13",
+      "name": "Strawberry",
+      "add": "../assets/strawberry.webp",
+      "price": 160,
+      "count": 0
+    },
+    {
+      "id": "14",
+      "name": "Kiwi",
+      "add": "/assets/kiwi.webp",
+      "price": 480,
+      "count": 0
+    },
+    {
+      "id": "15",
+      "name": "Apple",
+      "add": "/assets/apple.webp",
+      "price": 220,
+      "count": 0
+    }
+  ],
+  "Vegetables": [
+    {
+      "id": "21",
+      "name": "Carrot",
+      "add": "/assets/carrot.webp",
+      "price": 80,
+      "count": 0
+    },
+    {
+      "id": "22",
+      "name": "Brinjal",
+      "add": "/assets/brinjal.webp",
+      "price": 60,
+      "count": 0
+    },
+    {
+      "id": "23",
+      "name": "Onion",
+      "add": "/assets/onion.webp",
+      "price": 55,
+      "count": 0
+    },
+    {
+      "id": "24",
+      "name": "Tomato",
+      "add": "/assets/tomato.webp",
+      "price": 30,
+      "count": 0
+    },
+    {
+      "id": "25",
+      "name": "Cauliflower",
+      "add": "/assets/cauliflower.webp",
+      "price": 40,
+      "count": 0
+    }
+  ],
+  "Dairy": [
+    {
+      "id": "31",
+      "name": "Eggs - 10",
+      "add": "/assets/eggs.webp",
+      "price": 65,
+      "count": 0
+    },
+    {
+      "id": "32",
+      "name": "Toned Milk - 500 ml",
+      "add": "/assets/milktoned.webp",
+      "price": 30,
+      "count": 0
+    },
+    {
+      "id": "33",
+      "name": "Full Cream Milk - 500 ml",
+      "add": "/assets/milkcream.webp",
+      "price": 32,
+      "count": 0
+    },
+    {
+      "id": "34",
+      "name": "Curd - 400g Cup",
+      "add": "/assets/curd.webp",
+      "price": 50,
+      "count": 0
+    },
+    {
+      "id": "35",
+      "name": "Pure Cow Ghee - 500 ml",
+      "add": "/assets/ghee.webp",
+      "price": 390,
+      "count": 0
+    }
+  ],
+  "cart": []
 }

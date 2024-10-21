@@ -1,6 +1,6 @@
 import React from 'react'
 import { Typography,Box,Button,Stack } from '@mui/material'
-import { FaArrowRight } from "react-icons/fa";
+import { TfiArrowRight } from "react-icons/tfi";
 import eggs from '../assets/eggs.webp'
 import milktoned from '../assets/milktoned.webp'
 import milkcream from '../assets/milkcream.webp'
@@ -62,7 +62,7 @@ function Dairy() {
             
       </Box>
       ))}
-        <FaArrowRight style={{padding:'20px'}}/>
+        <TfiArrowRight />
     </Stack>
     </div>
   )

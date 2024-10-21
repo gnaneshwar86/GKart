@@ -1,15 +1,21 @@
-import React from 'react'
-import { useState } from "react";
+import React, { useContext, useEffect, useState } from 'react'
 import '../App.css'
 import Categories from '../components/Categories';
 import Menu from '../components/Menu';
 import Navbar from '../components/Navbar';
 import Deals from '../components/Deals'
-import Fruits from '../components/Fruits'
-import Vegetables from '../components/Vegetables';
-import Dairy from '../components/Dairy';
+// import Fruits from '../components/WithProducts'
+// import Vegetables from '../components/Vegetables';
+// import Dairy from '../components/Dairy';
 import Footer from '../components/Footer';
+import withProductsHOC from '../components/WithProductsHOC';
+import WithProducts from '../components/WithProducts';
 function Home() {
+
+  const Fruits = withProductsHOC(WithProducts,"Fruits");
+  const Vegetables = withProductsHOC(WithProducts,"Vegetables");
+  const Dairy = withProductsHOC(WithProducts,"Dairy");
+
   return (
     <div className='container'>
       <Menu />
