@@ -1,0 +1,71 @@
+# Ignore node_modules and cache
+node_modules/
+.cache/
+*.pack
+
+# If your project has a frontend folder, explicitly ignore its node_modules and cache
+frontend/node_modules/
+frontend/.cache/
+frontend/**/*.pack
+
+# Other recommended ignores
+dist/
+build/
+.env
+.DS_Store
+Thumbs.db
+
+# Compiled Java classes
+backend/*.class
+
+# Log files
+backend/*.log
+
+# Ignore build directories
+backend/target/
+backend/out/
+backend/build/
+
+# Maven dependencies
+backend/.mvn/
+!backend/mvnw*
+!backend/mvnw.cmd
+backend/pom.xml.tag
+backend/pom.xml.releaseBackup
+backend/pom.xml.versionsBackup
+backend/pom.xml.next
+backend/release.properties
+
+# Gradle-related files
+backend/.gradle/
+backend/gradle/
+backend/gradlew
+backend/gradlew.bat
+backend/settings.gradle
+backend/*.iml
+
+# IDE-related files
+backend/.idea/
+backend/.vscode/
+backend/*.swp
+backend/*.swo
+backend/*.bak
+
+# OS-generated files
+backend/.DS_Store
+backend/Thumbs.db
+
+# Spring Boot-specific files
+backend/BOOT-INF/
+backend/META-INF/
+backend/logs/
+backend/application.properties
+backend/application.yml
+backend/application-dev.properties
+backend/application-prod.properties
+
+# Security-related files
+backend/*.env
+backend/.env.local
+backend/.env.*.local
+backend/secrets.yml

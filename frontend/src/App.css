@@ -1,0 +1,121 @@
+.bdy{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: whitesmoke;
+}
+.box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.login{
+  margin-bottom: 80px;
+  font-family: cursive;
+  color: #18448c;
+}
+.signup{
+  margin-bottom: 40px;
+  font-family: cursive;
+  color: #18448c;
+}
+.up{
+  margin-bottom: 20px;
+}
+.logo{
+  margin-right: 150px;
+}
+.container{
+  display: flex;
+}
+.main-con{
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+}
+.dashboard{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+  height: 10vh;
+  width: 100%;
+  box-shadow: 0 12px 10px rgba(0, 0, 0, 0.1);
+}
+.menu{
+  position: sticky;
+  top : 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 15%;
+  height: 100vh;
+  background: whitesmoke;
+  border-right: 1px solid;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+.menu ul{
+  list-style-type: none;
+  padding: 10px;
+  align-items: center ;
+  justify-content: center;
+  width: 100%;
+}
+.menu li{
+  padding: 10px;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.menu ul li:hover {
+  background-color: black;
+  color: white;
+}
+.logohome{
+  height: 10vh;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+}
+.con{
+  padding: 20px;
+}
+.categ img{
+  cursor: pointer;
+}
+.categ img:hover{
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+.categ:hover .MuiTypography-root {
+  font-weight: bold;
+  cursor: pointer;
+  transition: font-weight 0.3s ease;
+}
+.ite:hover{
+  cursor: pointer;
+}
+.ite:hover{
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+.item img:hover{
+  cursor: pointer;
+}
+.item img:hover{
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+.prof:hover{
+  transform: scale(1.06);
+  transition: transform 0.3s ease;
+  box-shadow: 0 5px 10px rgba(95, 95, 95, 0.3);
+}
